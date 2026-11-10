@@ -1,0 +1,9 @@
+# Conflicting Candidate Release (v2.0.0-incompatible)
+# Contains deliberate version conflicts for automated validation testing
+flask<2.0.0
+numpy>=2.0.0
+scikit-learn<1.2.0
+requests==2.25.0
+docker>=7.0.0
+pyyaml>=6.0.0
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Performance & Operations Dashboard</title>
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="header">
+            <div class="header-brand">
+                <div class="logo-badge">⚡</div>
+                <div>
+                    <h1>AI Model Operations Center</h1>
+                    <p class="subtitle">Content Recommendation Microservice • Real-Time Health & Alerting</p>
+                </div>
+            </div>
+            <div class="header-status">
+                <div class="status-pill status-live">
+                    <span class="pulsing-dot"></span>
+                    <span id="live-indicator">LIVE TELEMETRY</span>
+                </div>
+                <div class="status-pill version-pill" id="active-version-pill">
+                    Version: <strong id="current-version">{{ initial_data.deployment_version }}</strong>
+                </div>
+                <div class="status-pill sla-pill" id="sla-badge">
+                    SLA: <strong id="sla-status">SUB-100MS OK</strong>
+                </div>
+            </div>
+        </header>
+
+        <!-- KPI Metrics Grid -->
+        <section class="kpi-grid">
+            <div class="kpi-card" id="card-latency">
+                <div class="kpi-header">
+                    <span class="kpi-title">Inference Latency (p95)</span>
+                    <span class="kpi-icon">⏱️</span>
+                </div>
+                <div class="kpi-value-row">
+                    <span class="kpi-value" id="val-latency-p95">{{ initial_data.current.latency_p95_ms }}</span>
+                    <span class="kpi-unit">ms</span>
+                </div>
+                <div class="kpi-subtext">
+                    Avg: <span id="val-latency-avg">{{ initial_data.current.latency_avg_ms }}</span>ms • Target: &lt;100ms
+                </div>
+            </div>
+
+            <div class="kpi-card" id="card-throughput">
+                <div class="kpi-header">
+                    <span class="kpi-title">Traffic Throughput</span>
+                    <span class="kpi-icon">🚀</span>
+                </div>
+                <div class="kpi-value-row">
+                    <span class="kpi-value" id="val-rpm">{{ initial_data.current.rpm }}</span>
+                    <span class="kpi-unit">RPM</span>
+                </div>
+                <div class="kpi-subtext">
+                    RPS: <span id="val-rps">{{ initial_data.current.rps }}</span> req/sec
+                </div>
+            </div>
+
+            <div class="kpi-card" id="card-error">
+                <div class="kpi-header">
+                    <span class="kpi-title">Error Rate</span>
+                    <span class="kpi-icon">🛡️</span>
+                </div>
+                <div class="kpi-value-row">
+                    <span class="kpi-value" id="val-error-rate">{{ initial_data.current.error_rate_pct }}</span>
+                    <span class="kpi-unit">%</span>
+                </div>
+                <div class="kpi-subtext">
+                    Threshold: &lt;1.5% • Uptime: 99.9%
+                </div>
+            </div>
+
+            <div class="kpi-card" id="card-cpu">
+                <div class="kpi-header">
+                    <span class="kpi-title">Container CPU</span>
+                    <span class="kpi-icon">💻</span>
+                </div>
+                <div class="kpi-value-row">
+                    <span class="kpi-value" id="val-cpu">{{ initial_data.current.cpu_usage_pct }}</span>
+                    <span class="kpi-unit">%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill" id="fill-cpu" style="width: {{ initial_data.current.cpu_usage_pct }}%;"></div>
+                </div>
+            </div>
+
+            <div class="kpi-card" id="card-memory">
+                <div class="kpi-header">
+                    <span class="kpi-title">Container Memory</span>
+                    <span class="kpi-icon">🧠</span>
+                </div>
+                <div class="kpi-value-row">
+                    <span class="kpi-value" id="val-memory">{{ initial_data.current.memory_usage_pct }}</span>
+                    <span class="kpi-unit">%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill" id="fill-memory" style="width: {{ initial_data.current.memory_usage_pct }}%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-grid">
+            <div class="chart-card wide-chart">
+                <div class="chart-header">
+                    <h3>📈 Inference Latency Trend (ms)</h3>
+                    <div class="chart-tag">SLA Barrier: 100ms</div>
+                </div>
+                <div class="chart-body">
+                    <canvas id="latencyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>⚡ Throughput & Error Rate</h3>
+                    <div class="chart-tag">RPS vs Errors</div>
+                </div>
+                <div class="chart-body">
+                    <canvas id="trafficChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h3>🖥️ System Resource Utilization</h3>
+                    <div class="chart-tag">CPU & Memory %</div>
+                </div>
+                <div class="chart-body">
+                    <canvas id="resourceChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert & Simulation Split Section -->
+        <section class="bottom-grid">
+            <!-- Active Alerts -->
+            <div class="panel alert-panel">
+                <div class="panel-header">
+                    <div class="panel-title-group">
+                        <h3>🚨 Configured Threshold Alerts</h3>
+                        <span class="badge" id="alert-count-badge">0 Active</span>
+                    </div>
+                    <button class="btn btn-secondary" onclick="clearAlerts()">Acknowledge All</button>
+                </div>
+                <div class="alert-list-container">
+                    <table class="alert-table">
+                        <thead>
+                            <tr>
+                                <th>Severity</th>
+                                <th>Metric</th>
+                                <th>Current</th>
+                                <th>Threshold</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alert-table-body">
+                            <!-- Populated dynamically via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Testing & Simulation Controller -->
+            <div class="panel simulation-panel">
+                <div class="panel-header">
+                    <h3>🧪 Operational Test Scenarios</h3>
+                    <span class="badge badge-info" id="current-sim-badge">Mode: Normal</span>
+                </div>
+                <p class="panel-desc">
+                    Trigger simulated operational stress to test threshold alarms, SLA violations, and canary rollback conditions:
+                </p>
+                <div class="simulation-btn-grid">
+                    <button class="btn btn-sim btn-sim-normal" onclick="setSimulation('normal')">
+                        <span>🟢</span> Normal Baseline (30-50ms)
+                    </button>
+                    <button class="btn btn-sim btn-sim-warning" onclick="setSimulation('high_load')">
+                        <span>🟡</span> High Traffic Surge (6,000 RPM)
+                    </button>
+                    <button class="btn btn-sim btn-sim-danger" onclick="setSimulation('latency_spike')">
+                        <span>🔴</span> Latency Spike (150ms+ SLA Breach)
+                    </button>
+                    <button class="btn btn-sim btn-sim-danger" onclick="setSimulation('error_burst')">
+                        <span>🔥</span> Error Burst (10%+ Failures)
+                    </button>
+                    <button class="btn btn-sim btn-sim-purple" onclick="setSimulation('memory_leak')">
+                        <span>🟣</span> Progressive Memory Leak
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <span>Media Recommendation Engine Operations Suite • 99.9% Uptime Deployment Pipeline</span>
+            <span>Refreshes every 2.0s</span>
+        </footer>
+    </div>
+
+    <!-- Script passing initial state -->
+    <script>
+        window.INITIAL_HISTORY = {{ initial_data.history | tojson }};
+    </script>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
+

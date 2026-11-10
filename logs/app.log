@@ -1,0 +1,192 @@
+2026-11-10 05:39:19,774 [INFO] [recommendation_service] User u6062 served 5 recommendations in 39.7ms (status: 200)
+2026-11-10 05:39:43,774 [INFO] [recommendation_service] User u3777 served 5 recommendations in 38.47ms (status: 200)
+2026-11-10 05:40:07,774 [INFO] [recommendation_service] User u2394 served 5 recommendations in 31.72ms (status: 200)
+2026-11-10 05:40:31,774 [INFO] [recommendation_service] User u7037 served 5 recommendations in 30.73ms (status: 200)
+2026-11-10 05:40:55,774 [INFO] [recommendation_service] User u8786 served 5 recommendations in 38.66ms (status: 200)
+2026-11-10 05:41:19,774 [INFO] [recommendation_service] User u3261 served 5 recommendations in 44.29ms (status: 200)
+2026-11-10 05:41:43,774 [INFO] [recommendation_service] User u7201 served 5 recommendations in 30.34ms (status: 200)
+2026-11-10 05:42:07,774 [INFO] [recommendation_service] User u5340 served 5 recommendations in 34.5ms (status: 200)
+2026-11-10 05:42:31,774 [INFO] [recommendation_service] User u3482 served 5 recommendations in 36.11ms (status: 200)
+2026-11-10 05:42:55,774 [INFO] [recommendation_service] User u6947 served 5 recommendations in 25.96ms (status: 200)
+2026-11-10 05:43:19,774 [INFO] [recommendation_service] User u2124 served 5 recommendations in 43.45ms (status: 200)
+2026-11-10 05:43:43,774 [INFO] [recommendation_service] User u4528 served 5 recommendations in 42.08ms (status: 200)
+2026-11-10 05:44:07,774 [INFO] [recommendation_service] User u7204 served 5 recommendations in 36.59ms (status: 200)
+2026-11-10 05:44:31,774 [INFO] [recommendation_service] User u2153 served 5 recommendations in 38.16ms (status: 200)
+2026-11-10 05:44:55,774 [INFO] [recommendation_service] User u4565 served 5 recommendations in 31.95ms (status: 200)
+2026-11-10 05:45:19,774 [INFO] [recommendation_service] User u6263 served 5 recommendations in 27.1ms (status: 200)
+2026-11-10 05:45:43,774 [INFO] [recommendation_service] User u3932 served 5 recommendations in 39.95ms (status: 200)
+2026-11-10 05:46:07,774 [INFO] [recommendation_service] User u5823 served 5 recommendations in 39.42ms (status: 200)
+2026-11-10 05:46:31,774 [INFO] [recommendation_service] User u7747 served 5 recommendations in 45.65ms (status: 200)
+2026-11-10 05:46:55,774 [INFO] [recommendation_service] User u8872 served 5 recommendations in 37.46ms (status: 200)
+2026-11-10 05:47:19,774 [INFO] [recommendation_service] User u2825 served 5 recommendations in 31.34ms (status: 200)
+2026-11-10 05:47:43,774 [INFO] [recommendation_service] User u6670 served 5 recommendations in 30.33ms (status: 200)
+2026-11-10 05:48:07,774 [INFO] [recommendation_service] User u2735 served 5 recommendations in 36.05ms (status: 200)
+2026-11-10 05:48:31,774 [INFO] [recommendation_service] User u6716 served 5 recommendations in 43.94ms (status: 200)
+2026-11-10 05:48:55,774 [INFO] [recommendation_service] User u5618 served 5 recommendations in 26.92ms (status: 200)
+2026-11-10 05:49:19,774 [INFO] [recommendation_service] User u6664 served 5 recommendations in 32.66ms (status: 200)
+2026-11-10 05:49:43,774 [INFO] [recommendation_service] User u9593 served 5 recommendations in 28.77ms (status: 200)
+2026-11-10 05:50:07,774 [INFO] [recommendation_service] User u9941 served 5 recommendations in 28.73ms (status: 200)
+2026-11-10 05:50:31,774 [INFO] [recommendation_service] User u8197 served 5 recommendations in 44.36ms (status: 200)
+2026-11-10 05:50:55,774 [INFO] [recommendation_service] User u7780 served 5 recommendations in 45.35ms (status: 200)
+2026-11-10 05:51:19,774 [INFO] [recommendation_service] User u9952 served 5 recommendations in 47.25ms (status: 200)
+2026-11-10 05:51:43,774 [INFO] [recommendation_service] User u1685 served 5 recommendations in 30.47ms (status: 200)
+2026-11-10 05:52:07,774 [INFO] [recommendation_service] User u9808 served 5 recommendations in 33.84ms (status: 200)
+2026-11-10 05:52:31,774 [INFO] [recommendation_service] User u5545 served 5 recommendations in 31.92ms (status: 200)
+2026-11-10 05:52:55,774 [INFO] [recommendation_service] User u6946 served 5 recommendations in 42.64ms (status: 200)
+2026-11-10 05:53:19,774 [INFO] [recommendation_service] User u4971 served 5 recommendations in 28.94ms (status: 200)
+2026-11-10 05:53:43,774 [INFO] [recommendation_service] User u3321 served 5 recommendations in 35.12ms (status: 200)
+2026-11-10 05:54:07,774 [INFO] [recommendation_service] User u3248 served 5 recommendations in 36.11ms (status: 200)
+2026-11-10 05:54:31,774 [INFO] [recommendation_service] User u3258 served 5 recommendations in 45.77ms (status: 200)
+2026-11-10 05:54:55,774 [INFO] [recommendation_service] User u4557 served 5 recommendations in 33.03ms (status: 200)
+2026-11-10 05:55:19,774 [INFO] [recommendation_service] User u3295 served 5 recommendations in 46.89ms (status: 200)
+2026-11-10 05:55:43,774 [INFO] [recommendation_service] User u5210 served 5 recommendations in 42.77ms (status: 200)
+2026-11-10 05:56:07,774 [INFO] [recommendation_service] User u1594 served 5 recommendations in 41.25ms (status: 200)
+2026-11-10 05:56:31,774 [INFO] [recommendation_service] User u6769 served 5 recommendations in 42.9ms (status: 200)
+2026-11-10 05:56:55,774 [INFO] [recommendation_service] User u5892 served 5 recommendations in 25.64ms (status: 200)
+2026-11-10 05:57:19,774 [INFO] [recommendation_service] User u6344 served 5 recommendations in 27.23ms (status: 200)
+2026-11-10 05:57:43,774 [INFO] [recommendation_service] User u1000 served 5 recommendations in 37.83ms (status: 200)
+2026-11-10 05:58:07,774 [INFO] [recommendation_service] User u3286 served 5 recommendations in 45.74ms (status: 200)
+2026-11-10 05:58:31,774 [INFO] [recommendation_service] User u3638 served 5 recommendations in 40.64ms (status: 200)
+2026-11-10 05:58:55,774 [INFO] [recommendation_service] User u6962 served 5 recommendations in 25.11ms (status: 200)
+2026-11-10 05:59:19,774 [INFO] [recommendation_service] User u8093 served 5 recommendations in 33.7ms (status: 200)
+2026-11-10 05:59:43,774 [INFO] [recommendation_service] User u2125 served 5 recommendations in 26.34ms (status: 200)
+2026-11-10 06:00:07,774 [INFO] [recommendation_service] User u1200 served 5 recommendations in 40.41ms (status: 200)
+2026-11-10 06:00:31,774 [INFO] [recommendation_service] User u4987 served 5 recommendations in 25.22ms (status: 200)
+2026-11-10 06:00:55,774 [INFO] [recommendation_service] User u6242 served 5 recommendations in 37.58ms (status: 200)
+2026-11-10 06:01:19,774 [INFO] [recommendation_service] User u8459 served 5 recommendations in 41.25ms (status: 200)
+2026-11-10 06:01:43,774 [INFO] [recommendation_service] User u1790 served 5 recommendations in 26.16ms (status: 200)
+2026-11-10 06:02:07,774 [INFO] [recommendation_service] User u7090 served 5 recommendations in 43.95ms (status: 200)
+2026-11-10 06:02:31,774 [INFO] [recommendation_service] User u2391 served 5 recommendations in 38.36ms (status: 200)
+2026-11-10 06:02:55,774 [INFO] [recommendation_service] User u1485 served 5 recommendations in 26.38ms (status: 200)
+2026-11-10 06:03:19,774 [ERROR] [gateway] 504 Gateway Timeout for user u6570 after 250ms deadline exceeded
+2026-11-10 06:03:19,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u6570
+2026-11-10 06:03:43,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 122 tasks queued, response delayed by 159.6ms
+2026-11-10 06:03:43,774 [CLIENT_EVENT] User u2362 abandoned playback: exit_before_start=true latency_ms=159.6
+2026-11-10 06:04:07,774 [ERROR] [gateway] 504 Gateway Timeout for user u7615 after 250ms deadline exceeded
+2026-11-10 06:04:07,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u7615
+2026-11-10 06:04:31,774 [ERROR] [gateway] 504 Gateway Timeout for user u6942 after 250ms deadline exceeded
+2026-11-10 06:04:31,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u6942
+2026-11-10 06:04:55,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 59.7ms (threshold: 30ms)
+2026-11-10 06:05:19,774 [ERROR] [gateway] 504 Gateway Timeout for user u3524 after 250ms deadline exceeded
+2026-11-10 06:05:19,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u3524
+2026-11-10 06:05:43,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 145.04ms (batch_size: 64)
+2026-11-10 06:05:43,774 [CLIENT_EVENT] User u2862 stream buffering event recorded: buffer_duration_ms=464.1
+2026-11-10 06:06:07,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 118.11ms (batch_size: 64)
+2026-11-10 06:06:07,774 [CLIENT_EVENT] User u4135 stream buffering event recorded: buffer_duration_ms=378.0
+2026-11-10 06:06:31,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 103 tasks queued, response delayed by 135.0ms
+2026-11-10 06:06:31,774 [CLIENT_EVENT] User u6339 abandoned playback: exit_before_start=true latency_ms=135.0
+2026-11-10 06:06:55,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 164.61ms (batch_size: 64)
+2026-11-10 06:06:55,774 [CLIENT_EVENT] User u3987 stream buffering event recorded: buffer_duration_ms=526.8
+2026-11-10 06:07:19,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 146.63ms (batch_size: 64)
+2026-11-10 06:07:19,774 [CLIENT_EVENT] User u6240 stream buffering event recorded: buffer_duration_ms=469.2
+2026-11-10 06:07:43,774 [ERROR] [gateway] 504 Gateway Timeout for user u4908 after 250ms deadline exceeded
+2026-11-10 06:07:43,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u4908
+2026-11-10 06:08:07,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 163.19ms (batch_size: 64)
+2026-11-10 06:08:07,774 [CLIENT_EVENT] User u2033 stream buffering event recorded: buffer_duration_ms=522.2
+2026-11-10 06:08:31,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 140.2ms (batch_size: 64)
+2026-11-10 06:08:31,774 [CLIENT_EVENT] User u6533 stream buffering event recorded: buffer_duration_ms=448.6
+2026-11-10 06:08:55,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 70.7ms (threshold: 30ms)
+2026-11-10 06:09:19,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 65.0ms (threshold: 30ms)
+2026-11-10 06:09:43,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 61.3ms (threshold: 30ms)
+2026-11-10 06:10:07,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 74 tasks queued, response delayed by 163.9ms
+2026-11-10 06:10:07,774 [CLIENT_EVENT] User u3089 abandoned playback: exit_before_start=true latency_ms=163.9
+2026-11-10 06:10:31,774 [ERROR] [gateway] 504 Gateway Timeout for user u2740 after 250ms deadline exceeded
+2026-11-10 06:10:31,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u2740
+2026-11-10 06:10:55,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 158.88ms (batch_size: 64)
+2026-11-10 06:10:55,774 [CLIENT_EVENT] User u1932 stream buffering event recorded: buffer_duration_ms=508.4
+2026-11-10 06:11:19,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 160.65ms (batch_size: 64)
+2026-11-10 06:11:19,774 [CLIENT_EVENT] User u6260 stream buffering event recorded: buffer_duration_ms=514.1
+2026-11-10 06:11:43,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 72 tasks queued, response delayed by 159.3ms
+2026-11-10 06:11:43,774 [CLIENT_EVENT] User u4144 abandoned playback: exit_before_start=true latency_ms=159.3
+2026-11-10 06:12:07,774 [ERROR] [gateway] 504 Gateway Timeout for user u3872 after 250ms deadline exceeded
+2026-11-10 06:12:07,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u3872
+2026-11-10 06:12:31,774 [ERROR] [gateway] 504 Gateway Timeout for user u2751 after 250ms deadline exceeded
+2026-11-10 06:12:31,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u2751
+2026-11-10 06:12:55,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 163.22ms (batch_size: 64)
+2026-11-10 06:12:55,774 [CLIENT_EVENT] User u4274 stream buffering event recorded: buffer_duration_ms=522.3
+2026-11-10 06:13:19,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 66 tasks queued, response delayed by 122.0ms
+2026-11-10 06:13:19,774 [CLIENT_EVENT] User u6540 abandoned playback: exit_before_start=true latency_ms=122.0
+2026-11-10 06:13:43,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 143.54ms (batch_size: 64)
+2026-11-10 06:13:43,774 [CLIENT_EVENT] User u6333 stream buffering event recorded: buffer_duration_ms=459.3
+2026-11-10 06:14:07,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 55.9ms (threshold: 30ms)
+2026-11-10 06:14:31,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 91.5ms (threshold: 30ms)
+2026-11-10 06:14:55,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 154.03ms (batch_size: 64)
+2026-11-10 06:14:55,774 [CLIENT_EVENT] User u6896 stream buffering event recorded: buffer_duration_ms=492.9
+2026-11-10 06:15:19,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 67 tasks queued, response delayed by 159.0ms
+2026-11-10 06:15:19,774 [CLIENT_EVENT] User u7366 abandoned playback: exit_before_start=true latency_ms=159.0
+2026-11-10 06:15:43,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 82.7ms (threshold: 30ms)
+2026-11-10 06:16:07,774 [ERROR] [gateway] 504 Gateway Timeout for user u9964 after 250ms deadline exceeded
+2026-11-10 06:16:07,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u9964
+2026-11-10 06:16:31,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 89.6ms (threshold: 30ms)
+2026-11-10 06:16:55,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 97 tasks queued, response delayed by 155.3ms
+2026-11-10 06:16:55,774 [CLIENT_EVENT] User u2755 abandoned playback: exit_before_start=true latency_ms=155.3
+2026-11-10 06:17:19,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 66.8ms (threshold: 30ms)
+2026-11-10 06:17:43,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 118.08ms (batch_size: 64)
+2026-11-10 06:17:43,774 [CLIENT_EVENT] User u1038 stream buffering event recorded: buffer_duration_ms=377.9
+2026-11-10 06:18:07,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 124.13ms (batch_size: 64)
+2026-11-10 06:18:07,774 [CLIENT_EVENT] User u6781 stream buffering event recorded: buffer_duration_ms=397.2
+2026-11-10 06:18:31,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 84 tasks queued, response delayed by 178.6ms
+2026-11-10 06:18:31,774 [CLIENT_EVENT] User u9514 abandoned playback: exit_before_start=true latency_ms=178.6
+2026-11-10 06:18:55,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 73 tasks queued, response delayed by 182.0ms
+2026-11-10 06:18:55,774 [CLIENT_EVENT] User u5241 abandoned playback: exit_before_start=true latency_ms=182.0
+2026-11-10 06:19:19,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 117 tasks queued, response delayed by 145.0ms
+2026-11-10 06:19:19,774 [CLIENT_EVENT] User u1383 abandoned playback: exit_before_start=true latency_ms=145.0
+2026-11-10 06:19:43,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 94 tasks queued, response delayed by 178.2ms
+2026-11-10 06:19:43,774 [CLIENT_EVENT] User u9641 abandoned playback: exit_before_start=true latency_ms=178.2
+2026-11-10 06:20:07,774 [ERROR] [gateway] 504 Gateway Timeout for user u5483 after 250ms deadline exceeded
+2026-11-10 06:20:07,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u5483
+2026-11-10 06:20:31,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 86 tasks queued, response delayed by 151.6ms
+2026-11-10 06:20:31,774 [CLIENT_EVENT] User u8102 abandoned playback: exit_before_start=true latency_ms=151.6
+2026-11-10 06:20:55,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 78 tasks queued, response delayed by 177.5ms
+2026-11-10 06:20:55,774 [CLIENT_EVENT] User u5396 abandoned playback: exit_before_start=true latency_ms=177.5
+2026-11-10 06:21:19,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 64.7ms (threshold: 30ms)
+2026-11-10 06:21:43,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 123.32ms (batch_size: 64)
+2026-11-10 06:21:43,774 [CLIENT_EVENT] User u1505 stream buffering event recorded: buffer_duration_ms=394.6
+2026-11-10 06:22:07,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 116.62ms (batch_size: 64)
+2026-11-10 06:22:07,774 [CLIENT_EVENT] User u9589 stream buffering event recorded: buffer_duration_ms=373.2
+2026-11-10 06:22:31,774 [WARN] [db_client] Connection pool saturation: acquired DB connection in 88.9ms (threshold: 30ms)
+2026-11-10 06:22:55,774 [ERROR] [gateway] 504 Gateway Timeout for user u3897 after 250ms deadline exceeded
+2026-11-10 06:22:55,774 [CLIENT_EVENT] InferenceException: recommendation delivery failed for user u3897
+2026-11-10 06:23:19,774 [ERROR] [gunicorn.workers] ThreadPoolExecutor queue saturated: 90 tasks queued, response delayed by 162.0ms
+2026-11-10 06:23:19,774 [CLIENT_EVENT] User u5700 abandoned playback: exit_before_start=true latency_ms=162.0
+2026-11-10 06:23:43,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 133.52ms (batch_size: 64)
+2026-11-10 06:23:43,774 [CLIENT_EVENT] User u4741 stream buffering event recorded: buffer_duration_ms=427.3
+2026-11-10 06:24:07,774 [WARN] [recommendation_service] Model inference bottleneck: embedding dot product took 130.19ms (batch_size: 64)
+2026-11-10 06:24:07,774 [CLIENT_EVENT] User u4578 stream buffering event recorded: buffer_duration_ms=416.6
+2026-11-10 06:24:31,774 [INFO] [recommendation_service] User u7151 served 5 recommendations in 31.56ms (status: 200)
+2026-11-10 06:24:55,774 [INFO] [recommendation_service] User u8708 served 5 recommendations in 41.13ms (status: 200)
+2026-11-10 06:25:19,774 [INFO] [recommendation_service] User u5285 served 5 recommendations in 38.9ms (status: 200)
+2026-11-10 06:25:43,774 [INFO] [recommendation_service] User u5225 served 5 recommendations in 31.97ms (status: 200)
+2026-11-10 06:26:07,774 [INFO] [recommendation_service] User u1103 served 5 recommendations in 25.07ms (status: 200)
+2026-11-10 06:26:31,774 [INFO] [recommendation_service] User u8600 served 5 recommendations in 27.22ms (status: 200)
+2026-11-10 06:26:55,774 [INFO] [recommendation_service] User u1577 served 5 recommendations in 44.1ms (status: 200)
+2026-11-10 06:27:19,774 [INFO] [recommendation_service] User u4387 served 5 recommendations in 40.73ms (status: 200)
+2026-11-10 06:27:43,774 [INFO] [recommendation_service] User u9434 served 5 recommendations in 28.49ms (status: 200)
+2026-11-10 06:28:07,774 [INFO] [recommendation_service] User u7654 served 5 recommendations in 45.3ms (status: 200)
+2026-11-10 06:28:31,774 [INFO] [recommendation_service] User u6748 served 5 recommendations in 36.78ms (status: 200)
+2026-11-10 06:28:55,774 [INFO] [recommendation_service] User u8003 served 5 recommendations in 37.96ms (status: 200)
+2026-11-10 06:29:19,774 [INFO] [recommendation_service] User u4063 served 5 recommendations in 45.36ms (status: 200)
+2026-11-10 06:29:43,774 [INFO] [recommendation_service] User u9043 served 5 recommendations in 25.73ms (status: 200)
+2026-11-10 06:30:07,774 [INFO] [recommendation_service] User u9683 served 5 recommendations in 33.08ms (status: 200)
+2026-11-10 06:30:31,774 [INFO] [recommendation_service] User u6201 served 5 recommendations in 30.08ms (status: 200)
+2026-11-10 06:30:55,774 [INFO] [recommendation_service] User u7775 served 5 recommendations in 44.44ms (status: 200)
+2026-11-10 06:31:19,774 [INFO] [recommendation_service] User u3407 served 5 recommendations in 45.34ms (status: 200)
+2026-11-10 06:31:43,774 [INFO] [recommendation_service] User u8124 served 5 recommendations in 45.58ms (status: 200)
+2026-11-10 06:32:07,774 [INFO] [recommendation_service] User u3725 served 5 recommendations in 42.84ms (status: 200)
+2026-11-10 06:32:31,774 [INFO] [recommendation_service] User u1455 served 5 recommendations in 43.93ms (status: 200)
+2026-11-10 06:32:55,774 [INFO] [recommendation_service] User u8927 served 5 recommendations in 29.62ms (status: 200)
+2026-11-10 06:33:19,774 [INFO] [recommendation_service] User u3571 served 5 recommendations in 35.48ms (status: 200)
+2026-11-10 06:33:43,774 [INFO] [recommendation_service] User u8081 served 5 recommendations in 31.46ms (status: 200)
+2026-11-10 06:34:07,774 [INFO] [recommendation_service] User u6434 served 5 recommendations in 44.42ms (status: 200)
+2026-11-10 06:34:31,774 [INFO] [recommendation_service] User u4990 served 5 recommendations in 35.82ms (status: 200)
+2026-11-10 06:34:55,774 [INFO] [recommendation_service] User u2388 served 5 recommendations in 39.28ms (status: 200)
+2026-11-10 06:35:19,774 [INFO] [recommendation_service] User u4819 served 5 recommendations in 32.56ms (status: 200)
+2026-11-10 06:35:43,774 [INFO] [recommendation_service] User u8765 served 5 recommendations in 41.26ms (status: 200)
+2026-11-10 06:36:07,774 [INFO] [recommendation_service] User u4119 served 5 recommendations in 28.27ms (status: 200)
+2026-11-10 06:36:31,774 [INFO] [recommendation_service] User u1246 served 5 recommendations in 38.86ms (status: 200)
+2026-11-10 06:36:55,774 [INFO] [recommendation_service] User u7006 served 5 recommendations in 34.29ms (status: 200)
+2026-11-10 06:37:19,774 [INFO] [recommendation_service] User u9650 served 5 recommendations in 45.73ms (status: 200)
+2026-11-10 06:37:43,774 [INFO] [recommendation_service] User u6070 served 5 recommendations in 26.27ms (status: 200)
+2026-11-10 06:38:07,774 [INFO] [recommendation_service] User u8127 served 5 recommendations in 37.36ms (status: 200)
+2026-11-10 06:38:31,774 [INFO] [recommendation_service] User u3853 served 5 recommendations in 45.85ms (status: 200)
+2026-11-10 06:38:55,774 [INFO] [recommendation_service] User u5832 served 5 recommendations in 37.65ms (status: 200)

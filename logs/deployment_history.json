@@ -1,0 +1,73 @@
+[
+  {
+    "status": "ABORTED_DEPENDENCY_CONFLICT",
+    "candidate_version": "v2.0.0-incompatible",
+    "reason": "Candidate dependencies failed compatibility validation.",
+    "conflicts": [
+      {
+        "type": "VERSION_COLLISION",
+        "package": "flask",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt:3 (flask<2.0.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\src\\..\\requirements.txt:2 (flask>=3.0.0,<4.0.0)",
+        "specifier_a": "<2.0.0",
+        "specifier_b": "<4.0.0,>=3.0.0",
+        "reason": "Specifier sets <2.0.0 and <4.0.0,>=3.0.0 have disjoint version domains.",
+        "remediation": "Align 'flask' version bounds in both files to a shared compatible release."
+      },
+      {
+        "type": "VERSION_COLLISION",
+        "package": "numpy",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt:4 (numpy>=2.0.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\src\\..\\requirements.txt:7 (numpy>=1.24.0,<2.0.0)",
+        "specifier_a": ">=2.0.0",
+        "specifier_b": "<2.0.0,>=1.24.0",
+        "reason": "Specifier sets >=2.0.0 and <2.0.0,>=1.24.0 have disjoint version domains.",
+        "remediation": "Align 'numpy' version bounds in both files to a shared compatible release."
+      },
+      {
+        "type": "VERSION_COLLISION",
+        "package": "scikit-learn",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt:5 (scikit-learn<1.2.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\src\\..\\requirements.txt:8 (scikit-learn>=1.3.0,<1.5.0)",
+        "specifier_a": "<1.2.0",
+        "specifier_b": "<1.5.0,>=1.3.0",
+        "reason": "Specifier sets <1.2.0 and <1.5.0,>=1.3.0 have disjoint version domains.",
+        "remediation": "Align 'scikit-learn' version bounds in both files to a shared compatible release."
+      },
+      {
+        "type": "VERSION_COLLISION",
+        "package": "requests",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt:6 (requests==2.25.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\src\\..\\requirements.txt:4 (requests>=2.31.0,<3.0.0)",
+        "specifier_a": "==2.25.0",
+        "specifier_b": "<3.0.0,>=2.31.0",
+        "reason": "Pinned version 2.25.0 does not satisfy specifier <3.0.0,>=2.31.0",
+        "remediation": "Align 'requests' version bounds in both files to a shared compatible release."
+      },
+      {
+        "type": "ECOSYSTEM_INCOMPATIBILITY",
+        "package": "numpy + scikit-learn",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt (numpy>=2.0.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt (scikit-learn<1.2.0)",
+        "specifier_a": ">=2.0.0",
+        "specifier_b": "<1.2.0",
+        "reason": "NumPy 2.0+ introduces breaking C-API changes incompatible with scikit-learn < 1.3.0.",
+        "remediation": "Upgrade or constrain scikit-learn to be compatible with numpy >=2.0.0."
+      },
+      {
+        "type": "ECOSYSTEM_INCOMPATIBILITY",
+        "package": "numpy + scipy",
+        "source_a": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\tests\\..\\requirements_conflict.txt (numpy>=2.0.0)",
+        "source_b": "C:\\Users\\Praveen\\Documents\\Learn\\Coursera\\AgenticAIProject\\src\\..\\requirements.txt (scipy>=1.11.0,<1.13.0)",
+        "specifier_a": ">=2.0.0",
+        "specifier_b": "<1.13.0,>=1.11.0",
+        "reason": "NumPy 2.0+ requires SciPy >= 1.12.0 for ABI compatibility.",
+        "remediation": "Upgrade or constrain scipy to be compatible with numpy >=2.0.0."
+      }
+    ],
+    "traffic_split": {
+      "blue": 100,
+      "green": 0
+    }
+  }
+]

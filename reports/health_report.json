@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-11-10T06:41:12.666543",
+  "health_status": "CRITICAL_ATTENTION_REQUIRED",
+  "health_score": 10,
+  "target_sla": "Sub-100ms Latency & 99.9% Uptime",
+  "sla_compliance": false,
+  "metrics_overview": {
+    "parsed_lines": 192,
+    "log_counts": {
+      "INFO": 139,
+      "WARN": 28,
+      "ERROR": 25,
+      "CRITICAL": 0
+    },
+    "total_bottlenecks": 56,
+    "user_impact_events": 42
+  },
+  "correlation_analysis": {
+    "pearson_r": 0.987,
+    "correlation_strength": "STRONG_POSITIVE",
+    "insight": "Direct causal correlation (r=0.987): Infrastructure stress and inference bottlenecks are directly degrading user streaming experience and driving playback abandonments.",
+    "system_stress_series": [
+      0,
+      0,
+      0,
+      22,
+      26,
+      28,
+      37,
+      34,
+      4,
+      0
+    ],
+    "user_impact_series": [
+      0,
+      0,
+      0,
+      4.0,
+      4.3999999999999995,
+      4.4,
+      5.0,
+      6.0,
+      0.8,
+      0
+    ]
+  },
+  "primary_root_causes": [
+    {
+      "name": "Gateway Timeout (HTTP 504)",
+      "count": 25,
+      "category": "Network / SLA",
+      "severity": "CRITICAL",
+      "recommendation": "Check upstream deadline propagation and implement circuit breaker pattern.",
+      "max_val": 182.0
+    },
+    {
+      "name": "Worker Thread Contention",
+      "count": 14,
+      "category": "Concurrency / Threading",
+      "severity": "CRITICAL",
+      "recommendation": "Increase Gunicorn worker threads or decouple async ranking pipeline.",
+      "max_val": 122.0
+    },
+    {
+      "name": "Model Inference Bottleneck",
+      "count": 17,
+      "category": "Compute / Model Architecture",
+      "severity": "HIGH",
+      "recommendation": "Optimize embedding dimension, enable INT8 quantization, or scale model replicas.",
+      "max_val": 164.61
+    }
+  ],
+  "all_detected_bottlenecks": [
+    {
+      "name": "Gateway Timeout (HTTP 504)",
+      "count": 25,
+      "category": "Network / SLA",
+      "severity": "CRITICAL",
+      "recommendation": "Check upstream deadline propagation and implement circuit breaker pattern.",
+      "max_val": 182.0
+    },
+    {
+      "name": "Worker Thread Contention",
+      "count": 14,
+      "category": "Concurrency / Threading",
+      "severity": "CRITICAL",
+      "recommendation": "Increase Gunicorn worker threads or decouple async ranking pipeline.",
+      "max_val": 122.0
+    },
+    {
+      "name": "Model Inference Bottleneck",
+      "count": 17,
+      "category": "Compute / Model Architecture",
+      "severity": "HIGH",
+      "recommendation": "Optimize embedding dimension, enable INT8 quantization, or scale model replicas.",
+      "max_val": 164.61
+    }
+  ],
+  "remediation_plan": [
+    "Check upstream deadline propagation and implement circuit breaker pattern.",
+    "Increase Gunicorn worker threads or decouple async ranking pipeline.",
+    "Optimize embedding dimension, enable INT8 quantization, or scale model replicas."
+  ]
+}

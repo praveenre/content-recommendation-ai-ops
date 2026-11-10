@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  # Stable Blue Environment (Active Production)
+  model-service-blue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: recommendation-model-blue
+    environment:
+      - SERVICE_VERSION=v1.0.0
+      - APP_ENV=production
+      - PORT=5000
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # Candidate Green Environment (Staging / Canary)
+  model-service-green:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: recommendation-model-green
+    environment:
+      - SERVICE_VERSION=v1.1.0
+      - APP_ENV=canary
+      - PORT=5002
+    ports:
+      - "5002:5002"
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5002/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # Real-Time Performance Monitoring Dashboard
+  monitoring-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: operations-monitoring-dashboard
+    command: ["python", "src/monitoring_dashboard.py"]
+    environment:
+      - MONITOR_PORT=5001
+      - APP_ENV=production
+    ports:
+      - "5001:5001"
+    restart: unless-stopped
+    depends_on:
+      - model-service-blue

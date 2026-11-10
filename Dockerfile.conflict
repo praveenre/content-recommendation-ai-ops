@@ -1,0 +1,19 @@
+# Dockerfile with Conflicting Direct Dependencies for Testing
+FROM python:3.9-slim
+
+ENV APP_ENV=candidate-broken
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
+# Direct install conflicting packages
+RUN pip install "numpy>=2.0.0" "scikit-learn<1.2.0" "flask<2.0.0"
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY src/ ./src/
+
+EXPOSE 5000
+CMD ["python", "src/model_service.py"]
+

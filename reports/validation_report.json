@@ -1,0 +1,81 @@
+{
+  "validation_status": "READY_FOR_DEPLOYMENT",
+  "ready_for_deployment": true,
+  "message": "All dependencies validated successfully. Zero conflicts detected.",
+  "summary": {
+    "scanned_files": [
+      "requirements.txt",
+      "Dockerfile"
+    ],
+    "total_packages_tracked": 9,
+    "total_conflicts": 0,
+    "total_warnings": 0
+  },
+  "conflicts": [],
+  "warnings": [],
+  "dependencies_catalog": {
+    "flask": [
+      {
+        "source": "requirements.txt",
+        "raw": "flask>=3.0.0,<4.0.0",
+        "specifier": "<4.0.0,>=3.0.0"
+      }
+    ],
+    "pyyaml": [
+      {
+        "source": "requirements.txt",
+        "raw": "pyyaml>=6.0.0,<7.0.0",
+        "specifier": "<7.0.0,>=6.0.0"
+      }
+    ],
+    "requests": [
+      {
+        "source": "requirements.txt",
+        "raw": "requests>=2.31.0,<3.0.0",
+        "specifier": "<3.0.0,>=2.31.0"
+      }
+    ],
+    "docker": [
+      {
+        "source": "requirements.txt",
+        "raw": "docker>=7.0.0,<8.0.0",
+        "specifier": "<8.0.0,>=7.0.0"
+      }
+    ],
+    "packaging": [
+      {
+        "source": "requirements.txt",
+        "raw": "packaging>=23.0,<25.0",
+        "specifier": "<25.0,>=23.0"
+      }
+    ],
+    "numpy": [
+      {
+        "source": "requirements.txt",
+        "raw": "numpy>=1.24.0,<2.0.0",
+        "specifier": "<2.0.0,>=1.24.0"
+      }
+    ],
+    "scikit-learn": [
+      {
+        "source": "requirements.txt",
+        "raw": "scikit-learn>=1.3.0,<1.5.0",
+        "specifier": "<1.5.0,>=1.3.0"
+      }
+    ],
+    "scipy": [
+      {
+        "source": "requirements.txt",
+        "raw": "scipy>=1.11.0,<1.13.0",
+        "specifier": "<1.13.0,>=1.11.0"
+      }
+    ],
+    "gunicorn": [
+      {
+        "source": "requirements.txt",
+        "raw": "gunicorn>=21.0.0,<23.0.0",
+        "specifier": "<23.0.0,>=21.0.0"
+      }
+    ]
+  }
+}

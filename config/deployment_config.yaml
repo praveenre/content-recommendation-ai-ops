@@ -1,0 +1,45 @@
+# Automated Deployment & Canary Release Configuration
+deployment:
+  service_name: "content-recommendation-engine"
+  strategy: "canary_blue_green"
+  target_sla_p95_ms: 100.0
+
+environments:
+  blue:
+    id: "env-blue-prod"
+    version: "v1.0.0"
+    role: "production"
+    port: 5000
+    healthy: true
+  green:
+    id: "env-green-stage"
+    version: "v1.1.0"
+    role: "candidate"
+    port: 5002
+    healthy: true
+
+canary_stages:
+  - stage: 1
+    traffic_pct_green: 10
+    soak_time_sec: 2
+    min_requests: 20
+  - stage: 2
+    traffic_pct_green: 25
+    soak_time_sec: 2
+    min_requests: 30
+  - stage: 3
+    traffic_pct_green: 50
+    soak_time_sec: 2
+    min_requests: 50
+  - stage: 4
+    traffic_pct_green: 100
+    soak_time_sec: 1
+    min_requests: 50
+
+rollback_triggers:
+  max_latency_p95_ms: 100.0  # SLA limit for recommendation model
+  max_error_rate_pct: 2.0    # Maximum allowable error threshold
+  max_cpu_pct: 85.0
+  healthcheck_retries: 3
+  auto_rollback_enabled: true
+

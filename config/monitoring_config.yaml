@@ -1,0 +1,38 @@
+# Performance Monitoring and Alerting Configuration
+service_name: "content-recommendation-engine"
+target_sla:
+  max_latency_p95_ms: 100.0
+  target_uptime_pct: 99.9
+
+thresholds:
+  latency_ms:
+    warning: 95.0
+    critical: 140.0
+    metric_label: "Inference Latency (p95)"
+    unit: "ms"
+
+  error_rate_pct:
+    warning: 1.5
+    critical: 5.0
+    metric_label: "Request Error Rate"
+    unit: "%"
+
+  cpu_usage_pct:
+    warning: 80.0
+    critical: 90.0
+    metric_label: "Container CPU Utilization"
+    unit: "%"
+
+  memory_usage_pct:
+    warning: 80.0
+    critical: 92.0
+    metric_label: "Container Memory Utilization"
+    unit: "%"
+
+history:
+  max_datapoints: 60
+  sample_interval_sec: 2.0
+
+simulation:
+  default_profile: "normal"
+
