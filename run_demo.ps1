@@ -1,4 +1,4 @@
-﻿# Interactive Pipeline Demo Runner
+# Interactive Pipeline Demo Runner
 Clear-Host
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host "  🎬 AI Content Recommendation Model Deployment Pipeline Demo  " -ForegroundColor Cyan
@@ -58,3 +58,4 @@ switch ($choice) {
         Write-Host "`nExiting demo runner." -ForegroundColor Gray
     }
 }
+

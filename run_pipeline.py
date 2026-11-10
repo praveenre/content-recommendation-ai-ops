@@ -1,4 +1,4 @@
-"""
+f"""
 Master Deployment Pipeline & Operations Orchestrator
 Executes the complete end-to-end lifecycle:
 1. Dependency Validation Gate

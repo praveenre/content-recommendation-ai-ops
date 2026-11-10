@@ -54,3 +54,4 @@ services:
     restart: unless-stopped
     depends_on:
       - model-service-blue
+
